@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyTorch
+*.pt
+*.pth
+
+# Virtual Environment
+venv/
+.env
+
+# Datasets
+data/
+
+# Mac OS
+.DS_Store
+
+# Output files
+*.png
+*.json
