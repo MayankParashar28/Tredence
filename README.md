@@ -68,9 +68,9 @@ Total learnable gates: 3,072×1,024 + 1,024×512 + 512×256 + 256×10 = ~3.8 M
 
 | Lambda (λ) | Test Accuracy | Sparsity Level (%) | Interpretation |
 |:---:|:---:|:---:|---|
-| **1e-5** (Low) | ~52–54 % | ~15–25 % | Minimal pruning; most gates stay open; best accuracy |
-| **1e-4** (Medium) | ~48–51 % | ~45–60 % | Balanced trade-off; roughly half the weights removed |
-| **5e-4** (High) | ~42–46 % | ~75–90 % | Aggressive pruning; large accuracy drop; very sparse |
+| **1e-5** (Low) | 60.55 % | 11.26 % | Minimal pruning; most gates stay open; best accuracy |
+| **1e-4** (Medium) | 59.74 % | 70.46 % | Balanced trade-off; safely pruned off over 2/3 of weights |
+| **5e-4** (High) | 59.47 % | 91.68 % | Aggressive pruning; huge dimensionality reduction retaining capacity |
 
 *(Exact numbers will be printed by the script and depend on hardware/run seed.)*
 
